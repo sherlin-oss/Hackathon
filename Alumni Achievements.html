@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alumni Achievements</title>
+</head>
+
+<body>
+<center>
+    <h1>Alumni Achievements🏅</h1>
+
+    <label for="achievement">Select Achievement:</label>
+
+    <select id="achievement" name="achievement">
+        <option value="">-- Select --</option>
+        <option value="academic">Academic Excellence</option>
+        <option value="career">Career Achievement</option>
+        <option value="entrepreneurship">Entrepreneurship</option>
+        <option value="research">Research & Innovation</option>
+        <option value="awards">Awards & Recognition</option>
+        <option value="leadership">Leadership</option>
+        <option value="community">Community Service</option>
+        <option value="higher-education">Higher Education</option>
+    </select>
+
+    <br><br>
+
+    <h2>Alumni</h2>
+
+    <select id="alumni" name="alumni">
+        <option value="">-- Select Alumni --</option>
+        <option value="priya">Priya S. - 2022 Batch</option>
+        <option value="keerthana">Keerthana R. - 2021 Batch</option>
+        <option value="ananya">Ananya M. - 2023 Batch</option>
+        <option value="divya">Divya K. - 2020 Batch</option>
+    </select>
+
+    <br><br>
+
+    <button type="button" onclick="viewBiodata()">View Biodata</button>
+
+    <div id="biodata" style="margin-top: 20px;"></div>
+</center>
+    <script>
+        const alumniData = {
+            priya: {
+                name: "Priya S.",
+                batch: "2022 Batch",
+                achievement: "Academic Excellence",
+                department: "Computer Science",
+                email: "priya@example.com",
+                phone: "+91 98765 43210",
+                biodata: "Priya is a dedicated alumna who achieved excellent academic results and actively participated in college activities."
+            },
+            keerthana: {
+                name: "Keerthana R.",
+                batch: "2021 Batch",
+                achievement: "Career Achievement",
+                department: "Information Technology",
+                email: "keerthana@example.com",
+                phone: "+91 98765 43211",
+                biodata: "Keerthana has built a successful career in the technology industry and continues to support current students."
+            },
+            ananya: {
+                name: "Ananya M.",
+                batch: "2023 Batch",
+                achievement: "Research & Innovation",
+                department: "Biotechnology",
+                email: "ananya@example.com",
+                phone: "+91 98765 43212",
+                biodata: "Ananya is involved in innovative research projects and has presented her work at various academic events."
+            },
+            divya: {
+                name: "Divya K.",
+                batch: "2020 Batch",
+                achievement: "Community Service",
+                department: "Commerce",
+                email: "divya@example.com",
+                phone: "+91 98765 43213",
+                biodata: "Divya actively contributes to community development programs and volunteers for social welfare initiatives."
+            }
+        };
+
+        function viewBiodata() {
+            const selectedAlumni = document.getElementById("alumni").value;
+            const biodataContainer = document.getElementById("biodata");
+
+            if (!selectedAlumni) {
+                biodataContainer.innerHTML = "<p>Please select an alumni to view their biodata.</p>";
+                return;
+            }
+
+            const alumni = alumniData[selectedAlumni];
+
+            biodataContainer.innerHTML = `
+                <h2>${alumni.name}</h2>
+                <p><strong>Batch:</strong> ${alumni.batch}</p>
+                <p><strong>Department:</strong> ${alumni.department}</p>
+                <p><strong>Achievement:</strong> ${alumni.achievement}</p>
+                <p><strong>Email:</strong> ${alumni.email}</p>
+                <p><strong>Phone:</strong> ${alumni.phone}</p>
+                <p><strong>Biodata:</strong> ${alumni.biodata}</p>
+            `;
+        }
+    
+    </script>
+    <style>
+        body{
+            background-color: beige;
+        }
+    </style>
+
+</body>
+</html>
