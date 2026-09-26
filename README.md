@@ -41,7 +41,7 @@ The Alumni Information Management Portal is a web-based platform designed to con
 
  Deployed Link
 
-"View Live Website" (https://acewonboard.vercel.app)
+"View Live Website" ()
 
 👩‍💻 Project
 
