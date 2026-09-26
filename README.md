@@ -41,7 +41,7 @@ The Alumni Information Management Portal is a web-based platform designed to con
 
  Deployed Link
 
-"View Live Website" ()
+"View Live Website" (README.md)
 
 👩‍💻 Project
 
