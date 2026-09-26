@@ -41,7 +41,7 @@ The Alumni Information Management Portal is a web-based platform designed to con
 
  Deployed Link
 
-"View Live Website" (t https://sherlin-oss.github.io/Hackathon/)
+"View Live Website" ( https://sherlin-oss.github.io/Hackathon/)
 
 👩‍💻 Project
 
