@@ -1,143 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Alumni Events</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f4fc;
+        }
+
+        header {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #5B3CC5;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            margin: 4px;
+            display: inline-block;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background-color: #5B3CC5;
+            color: white;
+        }
+
+        .events {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .event-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ddd4e8;
+        }
+
+        .event-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .event-card h2 {
+            color: #5B3CC5;
+        }
+
+        .event-icon {
+            font-size: 40px;
+        }
+
+        .event-card button {
+            background-color: #5B3CC5;
+            color: white;
+            border: none;
+            padding: 11px 20px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .event-card button:hover {
+            background-color: #5B3CC5;
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 35px;
+        }
+
+        .back-home a {
+            background-color: #5B3CC5;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 7px;
+        }
+
+        footer {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+
+            .events {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
 
+
 <body>
-    <center>
+
+<header>
+
+    <h1>ARUNACHALA ALUMNI PORTAL</h1>
+
+    <p>Alumni Events 🎓</p>
+
+</header>
 
 
-    <h1>Alumni Events</h1>
+<nav>
 
-    <p>
-        Our Alumni Information Management Portal organizes various events
-        to connect alumni, students, and faculty members.
-    </p>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="alumni achievements.html">Achievements</a>
+    <a href="alumni events.html">Events</a>
+    <a href="contact.html">Contact</a>
 
-    <hr>
+</nav>
 
-    <h2>Upcoming Events</h2>
 
-    <h3>🎓 Annual Alumni Meet</h3>
-    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/alumni-homecoming-design-template-7eb3e89c973e8d439e9e29a97e0bc52a_screen.jpg?ts=1711768940" width="300" height="200">
-    <p><b>Date:</b> 15 December 2026</p>
-    <p><b>Venue:</b> College Auditorium</p>
-    <p>
-        An opportunity for alumni, students, and faculty to reconnect
-        and share memorable experiences.
-    </p>
-    <button>View Event</button>
-    <button>Register Now</button>
+<section class="events">
 
-    <hr>
 
-    <h3>💼 Career Guidance Session</h3>
-    <img src="https://tse4.mm.bing.net/th/id/OIP.ohmhEZFyxMQIlBbotT2zZgHaHa?r=0&pid=Api&P=0&h=180" width="300" height="200">
-    <p><b>Date:</b> 10 January 2027</p>
-    <p><b>Venue:</b> Seminar Hall</p>
-    <p>
-        Alumni share career guidance, industry knowledge, and
-        professional experiences with students.
-    </p>
-    <button>View Event</button>
-    <button>Register Now</button>
+    <div class="event-card">
 
-    <hr>
+        <div class="event-icon">🎓</div>
 
-    <h3>💻 Technical Workshop</h3>
-    <img src="https://tse1.mm.bing.net/th/id/OIP.3wspvbKw3qWzilhGBhMtfQHaHa?r=0&pid=Api&P=0&h=180" width="300" height="200">
-    <p><b>Date:</b> 25 January 2027</p>
-    <p><b>Venue:</b> Computer Lab</p>
-    <p>
-        A technical workshop covering Web Development, AI,
-        and other emerging technologies.
-    </p>
-    <button>View Event</button>
-    <button>Register Now</button>
+        <h2>Annual Alumni Meet</h2>
 
-    <hr>
+        <p><b>Date:</b> 15 December 2026</p>
 
-    <h2>Past Events</h2>
+        <p><b>Venue:</b> College Auditorium</p>
 
-    <h3>🎤 Alumni Guest Lecture</h3>
-    <img src="https://tse4.mm.bing.net/th/id/OIP.u7B4n2skp06DG1yFl-dGMgHaHa?r=0&pid=Api&P=0&h=180" width="300" height="200">
-    <p><b>Date:</b> 5 February 2026</p>
-    <p><b>Venue:</b> Main Auditorium</p>
-    <p>
-        Alumni shared their professional journey and valuable
-        experiences with students.
-    </p>
-    <button>View Event</button>
+        <p>
+            An opportunity for alumni, students and faculty
+            to reconnect.
+        </p>
 
-    <hr>
+        <button onclick="eventMessage('Annual Alumni Meet')">
+            Register Now
+        </button>
 
-    <h3>🤝 Alumni–Student Interaction</h3>
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/cff4a767534507.5b3d007db983a.png" width="300" height="200">
-    <p><b>Date:</b> 20 February 2026</p>
-    <p><b>Venue:</b> Seminar Hall</p>
-    <p>
-        Students interacted with alumni and learned about
-        career opportunities and industry expectations.
-    </p>
-    <button>View Event</button>
+    </div>
 
-    <hr>
 
-    <h2>Event Registration</h2>
+    <div class="event-card">
 
-    <form>
+        <div class="event-icon">💼</div>
 
-        <label>Full Name:</label><br>
-        <input type="text" name="name">
-        <br><br>
+        <h2>Career Guidance Session</h2>
 
-        <label>Email:</label><br>
-        <input type="email" name="email">
-        <br><br>
+        <p><b>Date:</b> 10 January 2027</p>
 
-        <label>Mobile Number:</label><br>
-        <input type="tel" name="mobile">
-        <br><br>
+        <p><b>Venue:</b> Seminar Hall</p>
 
-        <label>Select Event:</label><br>
-        <select name="event">
-            <option>-- Select Event --</option>
-            <option>Annual Alumni Meet</option>
-            <option>Career Guidance Session</option>
-            <option>Technical Workshop</option>
-            <option>Alumni Guest Lecture</option>
-            <option>Alumni–Student Interaction</option>
-        </select>
+        <p>
+            Alumni share career guidance and professional
+            experiences.
+        </p>
 
-        <br><br>
+        <button onclick="eventMessage('Career Guidance Session')">
+            Register Now
+        </button>
 
-        <label>Batch:</label><br>
-        <input type="text" name="batch">
+    </div>
 
-        <br><br>
 
-        <input type="submit" value="Register for Event">
-        <input type="reset" value="Clear">
+    <div class="event-card">
 
-    </form>
+        <div class="event-icon">💻</div>
 
-    <hr>
+        <h2>Technical Workshop</h2>
 
-    <p>
-        <b>Arunachala College of Engineering for Women</b><br>
-        Alumni Information Management Portal
-    </p>
-    </center>
-      <button><a href="Portal.html" >Back</a></button>
+        <p><b>Date:</b> 25 January 2027</p>
+
+        <p><b>Venue:</b> Computer Lab</p>
+
+        <p>
+            A technical workshop covering web development,
+            AI and emerging technologies.
+        </p>
+
+        <button onclick="eventMessage('Technical Workshop')">
+            Register Now
+        </button>
+
+    </div>
+
+
+    <div class="event-card">
+
+        <div class="event-icon">🎤</div>
+
+        <h2>Alumni Guest Lecture</h2>
+
+        <p><b>Date:</b> 5 February 2026</p>
+
+        <p><b>Venue:</b> Main Auditorium</p>
+
+        <p>
+            Alumni shared their professional journey and
+            valuable experiences.
+        </p>
+
+        <button onclick="eventMessage('Alumni Guest Lecture')">
+            View Event
+        </button>
+
+    </div>
+
+
+</section>
+
+
+<div class="back-home">
+
+    <a href="index.html">← Back to Home</a>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Arunachala College of Engineering for Women</p>
+
+</footer>
+
+
+<script>
+
+    function eventMessage(eventName) {
+
+        alert(
+            "You selected: " +
+            eventName +
+            "\n\nThank you for your interest!"
+        );
+
+    }
+
+</script>
+
 </body>
 </html>
-<style>
-    body{
-        background-color: beige;
-    }
-    button {
-    margin-left: 1300px;
-    margin-top: 20px;
-    }
-</style>

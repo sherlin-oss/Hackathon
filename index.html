@@ -1,45 +1,199 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    
-    <title>Alumini details</title>
-</head>
-<body>
-    <center>
-    <h1>ARUNACHALA COLLEGE OF ENGINEERING FOR WOMEN</h1>
-    <P>MANAVILLAI , VELLICHANTHAI , NAGERCOIL</P>
-    </center>
-    <center>
-    <nav>
-    <div>
-        <ul>
-            <a href="">Home</a>
-            <a href="About.html">About Us</a>
-            <a href="Login.html">Alumni Login</a>
-        <a href="Registration.html">Alumni Registration</a>
-            <a href="Alumni Achievements.html">Alumni Achievements</a>
-            <a href="Alumni Events.html">Events</a>
-            <a href="Contact.html">Contact</a>
-        
-    </ul>
-    </div>
-    </nav>
-</center>
-<img src="https://th.bing.com/th/id/R.b8adafb58ed13a24bb3f253800dff280?rik=k%2fKd5TExilpODQ&riu=http%3a%2f%2farunachalahitechcollege.com%2fassets%2fimages%2fclient%2farunachala-engineering-clg-img.webp&ehk=PLtk5Trjs3qSgWV%2fUycv9akAPiePL0JHZ0%2b15%2bToQ3g%3d&risl=&pid=ImgRaw&r=0" alt="college image" style="width: 600px; height: 450px; padding-left: 450px;">
-    
-<p style="font-size: x-large;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Our college is a reputed institution committed to providing quality education in engineering and technology. It offers a positive and supportive environment where students are encouraged to develop their knowledge, skills, creativity, and confidence. With a strong focus on academic excellence, practical learning, innovation, discipline, and overall development, our college provides students with valuable opportunities to explore their talents and achieve their goals. Through various academic, technical, cultural, and extracurricular activities, our college continues to inspire students to become responsible, skilled, and successful professionals.</p>
-   
+    <title>Alumni Information Portal</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f4fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 5px;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 8px;
+        }
+
+        nav {
+            background-color: #5B3CC5;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            margin: 4px;
+            display: inline-block;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background-color: #eee5fa;
+            color: #5B3CC5;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero img {
+            width: 650px;
+            max-width: 90%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px #c5bad4;
+        }
+
+        .hero h2 {
+            color: #5B3CC5;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #5B3CC5;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 7px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #5B3CC5;
+        }
+
+        .content {
+            max-width: 950px;
+            margin: 20px auto 40px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ddd4e8;
+        }
+
+        .content h2 {
+            text-align: center;
+            color: #5B3CC5;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>ARUNACHALA COLLEGE OF ENGINEERING FOR WOMEN</h1>
+
+    <p>MANAVILLAI, VELLICHANTHAI, NAGERCOIL</p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About Us</a>
+
+    <a href="login.html">Login</a>
+
+    <a href="registration.html">Registration</a>
+
+    <a href="alumni achievements.html">Achievements</a>
+
+    <a href="alumni events.html">Events</a>
+
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+<section class="hero">
+
+    <img src="https://arunachalahitechcollege.com/assets/images/client/arunachala-engineering-clg-img.webp"
+         alt="College Image">
+
+    <h2>Welcome to Our Alumni Information Portal</h2>
+
+    <a href="registration.html" class="button">
+        Join Alumni Community
+    </a>
+
+</section>
+
+
+<section class="content">
+
+    <h2>About Our College</h2>
+
+    <p>
+        Our college is committed to providing quality education in
+        engineering and technology. The institution provides a supportive
+        environment where students can develop their knowledge, skills,
+        creativity and confidence.
+    </p>
+
+    <p>
+        This Alumni Information Management Portal helps the college
+        connect with alumni and provides an easy way to maintain
+        alumni information, achievements and events.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Arunachala College of Engineering for Women</p>
+
+</footer>
+
+
+<script>
+
+    console.log("Home Page Loaded");
+
+</script>
 
 </body>
 </html>
-<style>
-    a{
-        padding: 10px;
-    }
-body{
-    background-color: beige;
-    
-}
-</style>

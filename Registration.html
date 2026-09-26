@@ -1,81 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Alumni Registration</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f4fc;
+        }
+
+        header {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #5B3CC5;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            margin: 4px;
+            display: inline-block;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background-color: #5B3CC5;
+            
+            color: white;
+        }
+
+        .registration-box {
+            width: 800px;
+            max-width: 85%;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ddd4e8;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: #5B3CC5;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .submit {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: #5B3CC5;
+            
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5B3CC5;
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .back-home a {
+            background-color: #5B3CC5;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 7px;
+        }
+
+        footer {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+
 </head>
+
+
 <body>
-    <center>
-        <h1>Registration Form📱</h1>
-    <img src="https://tse4.mm.bing.net/th/id/OIP.HluldFUKbzSmnHs0KWTGTAHaKe?r=0&pid=Api&P=0&h=180" alt="">
-    
-    </center>      
-    <center>
-    <table>
-                <tr>
-                    <td>Full Name</td>
-                    <td><input type="text" style="margin: 15px;"></td>
-                </tr>
-                <tr>
-                    <td>Email Address</td>
-                    <td><input type="text" style="margin: 15px;"></td>
-                </tr>
-                <tr>
-                    <td>
-                        Mobile Number
-                    </td>
-                    <td><input type="number" style="margin: 15px;"></td>
-                </tr>
-                <tr>
-                    <td>Department</td>
-                    <td><input type="text" style="margin: 15px;"></td>
-                </tr>
+
+<header>
+
+    <h1>ARUNACHALA ALUMNI PORTAL</h1>
+
+    <p>Alumni Registration</p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="alumni achievements.html">Achievements</a>
+    <a href="alumni events.html">Events</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+<div class="registration-box">
+
+    <h2>📱 Alumni Registration Form</h2>
+
+    <form onsubmit="registerUser(event)">
+
+        <table>
+
+            <tr>
+                <td>Full Name</td>
+                <td>
+                    <input type="text" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email Address</td>
+                <td>
+                    <input type="email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="tel" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Department</td>
+                <td>
+                    <input type="text" required>
+                </td>
+            </tr>
 
             <tr>
                 <td>Graduation Year</td>
-               <td> <input type="number" style="margin: 15px;"></td>
+                <td>
+                    <input type="number" required>
+                </td>
             </tr>
-            <tr><td>
-                Alumni ID
-            </td>
-        <td><input type="number" style="margin: 15px;"></td></tr>
-        <tr>
-            <td>Current Company</td>
-           <td> <input type="text"style="margin: 15px;"></td>
-        </tr>
-        <tr>
-            <td>Job Role</td>
-            <td><input type="text" style="margin: 15px;"></td>
-        </tr>
-        <tr>
-                    <td>Current Location</td>
-                    <td><input type="text" style="margin: 15px;"></td>
-                </tr>
-                <tr>
-                    <td>Skills</td>
-                    <td><input type="text" style="margin: 15px;"></td>
-                </tr>
-                <tr>
-                    <td>LinkdIn</td>
-                    <td><input type="text" style="margin: 15px;"></td>
-        
-                </tr>
-               
-    </table>
-        </form>
-         <button style="background-color: lightblue; margin: 20px;">submit</button>
-        
-    </center>
-     <button><a href="Portal.html" >Back</a></button>
+
+            <tr>
+                <td>Alumni ID</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Current Company</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Job Role</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Current Location</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>LinkedIn</td>
+                <td>
+                    <input type="url">
+                </td>
+            </tr>
+
+        </table>
+
+
+        <div class="submit">
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+
+<div class="back-home">
+
+    <a href="index.html">← Back to Home</a>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Arunachala College of Engineering for Women</p>
+
+</footer>
+
+
+<script>
+
+    function registerUser(event) {
+
+        event.preventDefault();
+
+        alert("Registration Successfully Submitted!");
+
+    }
+
+</script>
+
 </body>
 </html>
-<style>
-    body{
-        background-color: beige;
-    }
-    button {
-    margin-left: 1300px;
-    margin-top: 20px;
-    }
-</style>

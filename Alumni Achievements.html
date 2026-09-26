@@ -1,120 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Alumni Achievements</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f4fc;
+        }
+
+        header {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #5B3CC5;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            margin: 4px;
+            display: inline-block;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background-color: #5B3CC5;
+            color:white;
+        }
+
+        .selection {
+            width: 600px;
+            max-width: 85%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ddd4e8;
+            text-align: center;
+        }
+
+        .selection h2 {
+            color: white;
+        }
+
+        select {
+            width: 90%;
+            padding: 12px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #5B3CC5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5B3CC5;
+        }
+
+        #biodata {
+            width: 600px;
+            max-width: 85%;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ddd4e8;
+        }
+
+        #biodata h2 {
+            color: #5B3CC5;
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 35px;
+        }
+
+        .back-home a {
+            background-color: #5B3CC5;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 7px;
+        }
+
+        footer {
+            background-color: #5B3CC5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+
 </head>
 
+
 <body>
-<center>
-    <h1>Alumni Achievements🏅</h1>
 
-    <label for="achievement">Select Achievement:</label>
+<header>
 
-    <select id="achievement" name="achievement">
-        <option value="">-- Select --</option>
-        <option value="academic">Academic Excellence</option>
-        <option value="career">Career Achievement</option>
-        <option value="entrepreneurship">Entrepreneurship</option>
-        <option value="research">Research & Innovation</option>
-        <option value="awards">Awards & Recognition</option>
-        <option value="leadership">Leadership</option>
-        <option value="community">Community Service</option>
-        <option value="higher-education">Higher Education</option>
+    <h1>ARUNACHALA ALUMNI PORTAL</h1>
+
+    <p>Alumni Achievements 🏆</p>
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="alumni achievements.html">Achievements</a>
+    <a href="alumni events.html">Events</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+<div class="selection">
+
+    <h2>Select Alumni</h2>
+
+    <select id="alumni">
+
+        <option value="">
+            -- Select Alumni --
+        </option>
+
+        <option value="priya">
+            Priya S. - 2022 Batch
+        </option>
+
+        <option value="keerthana">
+            Keerthana R. - 2021 Batch
+        </option>
+
+        <option value="ananya">
+            Ananya M. - 2023 Batch
+        </option>
+
+        <option value="divya">
+            Divya K. - 2020 Batch
+        </option>
+
     </select>
 
-    <br><br>
+    <br>
 
-    <h2>Alumni</h2>
+    <button onclick="viewBiodata()">
+        View Biodata
+    </button>
 
-    <select id="alumni" name="alumni">
-        <option value="">-- Select Alumni --</option>
-        <option value="priya">Priya S. - 2022 Batch</option>
-        <option value="keerthana">Keerthana R. - 2021 Batch</option>
-        <option value="ananya">Ananya M. - 2023 Batch</option>
-        <option value="divya">Divya K. - 2020 Batch</option>
-    </select>
+</div>
 
-    <br><br>
 
-    <button type="button" onclick="viewBiodata()" style="margin-left: 30px;">View Biodata</button>
+<div id="biodata"></div>
 
-    <div id="biodata" ></div>
-</center>
-<button><a href="Portal.html"  >Back</a></button>
-    <script>
-        const alumniData = {
-            priya: {
-                name: "Priya S.",
-                batch: "2022 Batch",
-                achievement: "Academic Excellence",
-                department: "Computer Science",
-                email: "priya@example.com",
-                phone: "+91 98765 43210",
-                biodata: "Priya is a dedicated alumna who achieved excellent academic results and actively participated in college activities."
-            },
-            keerthana: {
-                name: "Keerthana R.",
-                batch: "2021 Batch",
-                achievement: "Career Achievement",
-                department: "Information Technology",
-                email: "keerthana@example.com",
-                phone: "+91 98765 43211",
-                biodata: "Keerthana has built a successful career in the technology industry and continues to support current students."
-            },
-            ananya: {
-                name: "Ananya M.",
-                batch: "2023 Batch",
-                achievement: "Research & Innovation",
-                department: "Biotechnology",
-                email: "ananya@example.com",
-                phone: "+91 98765 43212",
-                biodata: "Ananya is involved in innovative research projects and has presented her work at various academic events."
-            },
-            divya: {
-                name: "Divya K.",
-                batch: "2020 Batch",
-                achievement: "Community Service",
-                department: "Commerce",
-                email: "divya@example.com",
-                phone: "+91 98765 43213",
-                biodata: "Divya actively contributes to community development programs and volunteers for social welfare initiatives."
-            }
-        };
 
-        function viewBiodata() {
-            const selectedAlumni = document.getElementById("alumni").value;
-            const biodataContainer = document.getElementById("biodata");
+<div class="back-home">
 
-            if (!selectedAlumni) {
-                biodataContainer.innerHTML = "<p>Please select an alumni to view their biodata.</p>";
-                return;
-            }
+    <a href="index.html">← Back to Home</a>
 
-            const alumni = alumniData[selectedAlumni];
+</div>
 
-            biodataContainer.innerHTML = `
-                <h2>${alumni.name}</h2>
-                <p><strong>Batch:</strong> ${alumni.batch}</p>
-                <p><strong>Department:</strong> ${alumni.department}</p>
-                <p><strong>Achievement:</strong> ${alumni.achievement}</p>
-                <p><strong>Email:</strong> ${alumni.email}</p>
-                <p><strong>Phone:</strong> ${alumni.phone}</p>
-                <p><strong>Biodata:</strong> ${alumni.biodata}</p>
-            `;
+
+<footer>
+
+    <p>© 2026 Arunachala College of Engineering for Women</p>
+
+</footer>
+
+
+<script>
+
+    const alumniData = {
+
+        priya: {
+            name: "Priya S.",
+            batch: "2022 Batch",
+            department: "Computer Science",
+            achievement: "Academic Excellence",
+            email: "priya@example.com",
+            phone: "+91 98765 43210"
+        },
+
+        keerthana: {
+            name: "Keerthana R.",
+            batch: "2021 Batch",
+            department: "Information Technology",
+            achievement: "Career Achievement",
+            email: "keerthana@example.com",
+            phone: "+91 98765 43211"
+        },
+
+        ananya: {
+            name: "Ananya M.",
+            batch: "2023 Batch",
+            department: "Biotechnology",
+            achievement: "Research & Innovation",
+            email: "ananya@example.com",
+            phone: "+91 98765 43212"
+        },
+
+        divya: {
+            name: "Divya K.",
+            batch: "2020 Batch",
+            department: "Commerce",
+            achievement: "Community Service",
+            email: "divya@example.com",
+            phone: "+91 98765 43213"
         }
-    
-    </script>
-    <style>
-        body{
-            background-color: beige;
+
+    };
+
+
+    function viewBiodata() {
+
+        let selected =
+            document.getElementById("alumni").value;
+
+        let biodata =
+            document.getElementById("biodata");
+
+
+        if (selected === "") {
+
+            biodata.innerHTML =
+                "<h3>Please select an alumni.</h3>";
+
+            return;
         }
-        button {
-    margin-left: 1300px;
-    margin-top: 20px;
-    
+
+
+        let alumni = alumniData[selected];
+
+
+        biodata.innerHTML = `
+
+            <h2>${alumni.name}</h2>
+
+            <p><b>Batch:</b> ${alumni.batch}</p>
+
+            <p><b>Department:</b>
+            ${alumni.department}</p>
+
+            <p><b>Achievement:</b>
+            ${alumni.achievement}</p>
+
+            <p><b>Email:</b>
+            ${alumni.email}</p>
+
+            <p><b>Phone:</b>
+            ${alumni.phone}</p>
+
+        `;
+
     }
-    
-    </style>
+
+</script>
 
 </body>
 </html>
